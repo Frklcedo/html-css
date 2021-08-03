@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+
+        /*
+            #   = id
+            .   = class
+            :   = pseudo-class
+            ::  = pseudo-element
+            >   = children
+        */
+
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        a{
+            color: #914091;
+            font-weight:bold;
+            text-decoration:none;
+        }
+        a:visited{
+            color: #573057;
+        }
+        a:hover{
+            font-weight:bolder;
+            text-decoration: underline;
+            color:#121212;
+        }
+        a:active{
+            color:#ed6aed;
+        }
+        .stier::before{
+            content:'=>';
+            font-weight:normal;
+        }
+        .stier::after{
+            content:'<=';
+            font-weight:normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul type="square">
+        <li><a href="https://github.com/Frklcedo" rel="external" target="_blank" class="stier">Meu GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/franklin-macedo-426ba6207/" rel="external" target="_blank">Meu linkedin</a></li>
+        <li><a href="https://www.cursoemvideo.com" rel="external" target="_blank">Site de onde estou aprendendo HTML e CSS (Curso em vídeo)</a></li>
+    </ul>
+</body>
+</html>
