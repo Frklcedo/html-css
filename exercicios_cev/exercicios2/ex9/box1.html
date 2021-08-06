@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas 1</title>
+    <style>
+        h1{
+                /*conteudo*/
+            height:110px;
+            width:300px;
+            background-color: cornsilk;
+
+                /* border */
+            border:20px solid darkslateblue;
+            
+                /* padding */
+            padding: 20px 21px 22px 23px;
+            /*       top right bottom left
+
+            padding:20px;
+                    all values
+            
+            padding:10px 20px;
+                top-bottom right-left  
+            */
+            
+                /* margin */
+            margin:20px auto 50px auto;
+            /*
+            margin: 50px;
+            margin: auto;
+            */
+
+            /* outline */
+            outline:5px groove rgb(188, 178, 255);            
+        }
+
+        a{
+            border:2px solid darkblue;
+
+            padding:5px;
+
+            display: block;
+
+            margin:2px;
+        }
+        .duo{
+            border:2px solid darkblue;
+
+            padding:5px;
+
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de caixas box-level, enquanto <a href="#">links propriamente</a><a  class="duo" href="#"> ditos</a>são exemplos de caixas inline-level.</p>
+</body>
+</html>
