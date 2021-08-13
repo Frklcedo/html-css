@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            margin:0px;
+            background-color:#E85A77;
+            font-size: 1.2em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color:white;
+            border-radius: 40px 40px 5px 5px;
+            padding: 10px;
+            margin:10px; 
+        }
+        h1{
+            padding:6px 20px;
+            margin:5px auto 4px 8px;
+            border-radius:40px 40px 40px 10px;
+            display: inline-block;
+            background-image: linear-gradient(90deg, #F57953, #FF6557);
+            box-shadow: inset 1px 1px 2px 2px #e85a7659;
+        }
+        nav{
+            border-radius: 5px;
+            border:2px solid #FF57CD;
+            padding:5px 20px;
+            
+        }
+        nav:hover{
+            box-shadow: 0px 0px 1px 1px #ff57cd4d;
+        }
+        .nav{
+            display:inline;
+            padding:5px;
+        }
+        .nav>a{
+            text-decoration: none;
+            margin-right:20px;
+            color:#72255b;
+            font-weight: bold;
+        }
+        .nav>a:hover{
+            text-decoration: underline;      
+        }
+        nav>ul{
+            margin:0px auto 0px auto;
+            padding:0px;
+            text-align: center;
+        }
+        main{
+            margin: 10px;
+            background-color:#FF6557;
+            padding:10px;
+        }
+        section#noticias{
+            background-color: white;
+            padding: 10px;
+        }
+        aside{
+            background-color:#FF6557;
+            color:white;
+        }
+        footer{
+            background-color:#E353F5;
+            text-align:center;
+            color:#121212;
+            font-weight:bold;
+            outline:5px solid #e253f596;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li class="nav"><a href="#">link</a></li>
+                <li class="nav"><a href="#">link</a></li>
+                <li class="nav"><a href="#">link</a></li>
+                <li class="nav"><a href="#">link</a></li>
+                <li class="nav"><a href="#">link</a></li>
+            </ul>
+        </nav>
+    </header>   
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim laborum distinctio, doloremque et excepturi impedit nostrum inventore. Temporibus qui ab exercitationem recusandae est illo eos id quos nemo. Atque, corrupti.</p>
+                <aside>
+                    <p>Artigo escrito por Lorem da Silva</p>
+                </aside>
+            </article>
+            <article>
+                
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Frklcedo</p>
+    </footer>
+</body>
+</html>
