@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Recomendação</title>
+</head>
+<body>
+    <h2>Sugestão de animes/séries/filmes</h2>
+    <p>Caso queira sugerir algum filme, anime, série ou mídia no geral, preencha o formulário abaixo:</p>
+    <form action="">
+        <p>
+            <label for="nomeCompleto">Nome completo</label>
+            <input type="text" placeholder="Nome Sobrenome..." name="nomeCompleto" required>
+        </p>
+        <p>
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="exemplo@email.com" name="nomeCompleto" required>
+        </p>
+        <p>
+            <label for="media">Tipo de mídia</label>
+            <select name="media" required>
+                <option selected disabled>Selecione um tipo de mídia</option>
+                <option value="anime">Anime</option>
+                <option value="filme">Filme</option>
+                <option value="serie">Série</option>
+            </select>
+        </p>
+        <p>
+            <label for="cens">Classificação</label>
+            <input type="number" name="cens" placeholder="Proibido para menores de [...]" required>
+        </p>
+
+        <label for="description">Descrição/resumo da obra</label><br>
+        <input type="text" required><br><br>
+
+        <input type="submit" value="Enviar sugestão"> 
+    </form>
+    <hr>
+    <h2>Índice</h2>
+    <p>Retornar às <a href="index.html">recomendações.</a></p>
+</body>
+</html>

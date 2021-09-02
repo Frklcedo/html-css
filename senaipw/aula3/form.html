@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        div{
+            margin:auto;
+            padding: 10px;
+            border: 2px solid rgba(255, 255, 255, 0);
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px #00000046;
+            margin: 20px auto;
+            width: min-content;
+        }
+        label,input{
+            display: block;
+            margin: 5px ;
+        }
+        #state{
+            display: inline;
+            
+        }
+        select{
+            margin: 5px auto auto auto;
+        }
+        option{
+            width: max-content;
+        }
+        #sendder{
+            font:normal bold 1.3em Arial,sans-serif;
+            background-color: crimson;
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid rgba(255, 255, 255, 0);
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px #00000046;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+        <h1>Faça seu cadastro</h1>
+        
+            <form action="form.php" method="POST">
+
+                <div>
+                    <label for="firstName">Nome</label>
+                    <input type="text" name="firstName" required>
+
+                    <label for="lastName">Sobrenome</label>
+                    <input type="text" name="lastName" required>
+
+                    <label for="ageNew">Idade</label>
+                    <input type="number" min="0" max="150" name="ageNew">
+
+                    <label for="emailNew">E-mail</label>
+                    <input type="email" name="emailNew" required>
+
+                    <label for="passNew">Digite sua senha</label>
+                    <input type="password" name="passNew" required>
+
+                    <label for="passConfirm">Digite novamente sua senha</label>
+                    <input type="password" name="passConfirm" required>
+    
+                    <label for="stateNew" id="state">Estado: </label>
+                    <select name="stateNew" required>
+                        <option selected disabled>Selecione UF</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MG">MG</option>
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PE">PE</option>
+                        <option value="PR">PR</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="RS">RS</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                </div>
+
+            <input id="sendder" type="submit" value="Enviar">
+
+        </form>
+</body>
+</html>
