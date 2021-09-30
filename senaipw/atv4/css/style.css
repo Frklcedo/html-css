@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+:root{
+    --color1: #EBE682;
+    --color2: #EB6A81;
+    --color3: #9E4F5D;
+    --color4: #96D2EB;
+
+    --defaultf: Arial, Verdana, sans-serif;
+    --hlf: 'Brush Script MT', cursive;
+    --monof: 'Courier New','Trebuchet MS', Courier, monospace;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--color2);
+    font-family: var(--defaultf);
+    font-size: 100%;
+}
+header{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.336);
+}
+header a{
+    text-decoration: none;
+}
+header h1{
+    font-family: var(--hlf);
+    color:var(--color2);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.20);
+    letter-spacing: 8px;
+    line-height: 1.2em;
+
+}
+header h1 spam, header h1 spam{
+    color:var(--color3);
+    text-transform: uppercase;
+}
+header h2{
+    text-indent: 6px;
+    font-family: var(--monof);
+    font-size: 1.1em;
+    line-height: 0.7em;
+    vertical-align: text-top;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.20);
+    background-color: var(--color2);
+    max-width: 380px;
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.212);
+
+}
+nav{
+    background-color: var(--color3);
+    padding: 5px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 420px;
+    align-items: center;
+}
+nav li{
+    background-color: white;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    margin:0 2px;
+    border-radius: 5px;
+    text-align: center;
+    flex-shrink: 0;
+    box-shadow:2px 2px 3px rgba(0, 0, 0, 0.3);
+    
+    
+}
+nav a{
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.199);
+    color: var(--color3);
+}
+nav li:hover{
+    padding: 6px 12px;  
+    margin:-1px 1px;
+    transition: 25ms;
+}
+nav a:active li{
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+main{
+    background-color: white;
+    max-width: 1100px;
+    padding: 25px 10px;
+    margin: auto;
+    margin-bottom: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.200);
+}
+main div{
+    max-width: 350px;
+    padding: 20px 10px;
+    margin: 20px 0;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    
+}
+main>div>p{
+    text-align: center;
+    font-size: 1.1em;
+    margin: 25px 0 20px;
+}
+main div.doces{
+    border:solid 10px var(--color4);
+}
+main div.salgados{
+    border:solid 10px var(--color1);
+}
+main a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+main a div{
+    width: 70%;
+    padding: 25px 15px;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+main a div:hover{
+    padding: 27px 17px;
+    margin: -2px auto;
+    transition: 25ms;
+}
+main a div:active{
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.025);
+}
+main a.doces div{
+    background-color: var(--color4);
+}
+main a.salgados div{
+    background-color: var(--color1);
+}
+div .img{
+    margin: auto;
+    display: block;
+    width: 90%;
+    border-radius: 30px;
+}
+footer{
+    padding: 20px;
+    background-color: var(--color3);
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.15);
+}
+footer p {
+    margin: 20px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    font-weight: bold;
+    border: solid 2px var(--color2);
+    border-radius: 10px;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:420px){
+    header{
+        padding-left: 5vw;
+    }
+    header h1, header h1 a{
+        font-size: 7vw;
+        letter-spacing: 2vw;
+    }
+    header h2{
+        font-size: 4vw;
+    }
+    nav ul{
+        margin: auto;
+        flex-direction: column;
+        align-items: stretch;
+        width: 75%;
+    }
+    nav li{
+        margin: 4px 0;
+    }
+    nav li:hover{ 
+        margin:4px 0;
+    }
+}
