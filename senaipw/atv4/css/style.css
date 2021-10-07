@@ -2,9 +2,13 @@
 
 :root{
     --color1: #EBE682;
+    --color1c: #6B693B;
     --color2: #EB6A81;
+    --color2lc:rgba(235, 107, 130, 0.204);
     --color3: #9E4F5D;
+    --color3lc:rgba(158, 79, 94, 0.425);
     --color4: #96D2EB;
+    --color4c: #24566B;
 
     --defaultf: Arial, Verdana, sans-serif;
     --hlf: 'Brush Script MT', cursive;
@@ -103,11 +107,12 @@ main{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    align-items: stretch;
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.200);
 }
 main div{
     max-width: 350px;
-    padding: 20px 10px;
+    padding: 30px 10px;
     margin: 20px 0;
     border-radius: 50px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -118,11 +123,20 @@ main>div>p{
     font-size: 1.1em;
     margin: 25px 0 20px;
 }
+main p{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.123);
+}
 main div.doces{
     border:solid 10px var(--color4);
 }
 main div.salgados{
     border:solid 10px var(--color1);
+}
+main p.p-doce {
+    color: var(--color4c);
+}
+main p.p-salgado{
+    color: var(--color1c);
 }
 main a{
     text-align: center;
@@ -157,6 +171,177 @@ div .img{
     display: block;
     width: 90%;
     border-radius: 30px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.356);
+}
+main form{
+    display: flex;
+    flex-flow: wrap column;
+    padding: 30px 20px;
+    margin: 50px;
+    width: 70%;
+    max-width: 400px;
+    border: solid 5px var(--color2);
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    justify-content: stretch;
+    
+}
+main form p{
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+main form hr{
+    margin: 15px -20px 5px
+}
+main form label{
+    text-indent: 15px;
+    padding: 5px;
+}
+main form label.title-form{
+    font-size: 1.1em;
+    text-indent: 0;
+}
+main form input,main form textarea{
+    text-indent: 15px;
+    outline: none;
+    border: solid 1px var(--color2);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.200);
+    box-sizing: border-box;
+}
+main form textarea{
+    resize: vertical;
+    text-align: justify;
+    font-family: var(--defaultf);
+    font-size: 0.85em;
+}
+main form input::-webkit-outer-spin-button, main form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+main form input[type=number] {
+  -moz-appearance: textfield;
+}
+main form select{
+    outline: none;
+    border: hidden;
+    outline: solid 2px var(--color2);
+    padding: 10px;
+    margin: 5px;
+}
+main form input[type=submit]{
+    width: 70%;
+    max-width: 200px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    background-color: var(--color2);
+    text-indent: 0;
+    margin: 20px auto 0;
+    padding: 15px;
+    border: none;
+    border-radius: 25px; 
+}
+main form .comp{
+    min-height: 100px;
+}
+main form #orders{
+    overflow: hidden;
+}
+main form optgroup{
+    font-style: normal;
+    color: var(--color3);
+}
+main form optgroup option{
+    text-indent: 10px;
+}
+main form optgroup .doce-opt{
+    color: var(--color4c);
+}
+main form optgroup .salgado-opt{
+    color: var(--color1c);
+}
+main form input[type=text]:hover,main form input[type=number]:hover,main form input[type=email]:hover{
+    border-width: 3px;
+    margin: -2px;
+    margin-bottom: -1px;
+    box-sizing: border-box;
+}
+main form textarea:hover{
+    border-width: 3px;
+    margin: -2px;
+    margin-bottom: 1px;
+    box-sizing: border-box;
+}
+main form input[type=submit]:hover{
+    padding: 17px;
+    margin: 18px auto -2px;
+
+}
+main form select#state:hover{
+    outline: solid 3px var(--color2);
+}
+main form select#orders option.doce-opt:hover{
+    background-color: var(--color4);
+}
+main form select#orders option.salgado-opt:hover{
+    background-color: var(--color1);
+}
+main#tb-nutri{
+    display: block;
+    padding-bottom: 80px;
+}
+main#tb-nutri h1{
+    text-align: center;
+    color: var(--color3);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);   
+    padding: 20px 20px 0; 
+}
+main#tb-nutri h2{
+    text-align: center;
+    color: var(--color2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.205);
+    padding: 10px;
+}
+main#tb-nutri p{
+    text-indent: 150px;
+    text-align: center;
+    color: var(--color3);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+    margin-bottom: 10px;
+}
+main#tb-nutri table{
+    margin: auto;
+    border: solid 2px var(--color2);
+    border-collapse: collapse;
+}
+main#tb-nutri tr:nth-child(even){
+    background-color: var(--color2lc);
+}
+main#tb-nutri tr:nth-child(odd){
+    background-color:  var(--color3lc);
+}
+main#tb-nutri tr:nth-child(1){
+    background-color:white;
+    color: var(--color3);
+}
+main#tb-nutri th{
+    text-align: center;
+    min-width: 150px;
+    padding: 10px;
+    border: solid 3px var(--color3);
+    vertical-align: center;
+}
+main#tb-nutri td{
+    min-width: 150px;
+    padding: 5px;
+    vertical-align: center;
+    border-bottom: groove 1px rgba(0, 0, 0, 0.150);
+}
+main#tb-nutri td.right-tb{
+    text-align: right;
 }
 footer{
     padding: 20px;
@@ -179,6 +364,11 @@ footer a{
 }
 footer a:hover{
     text-decoration: underline;
+}
+hr{
+    border-color: rgba(0, 0, 0, 0.250);
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 @media (max-width:420px){
@@ -203,5 +393,8 @@ footer a:hover{
     }
     nav li:hover{ 
         margin:4px 0;
+    }
+    footer{
+        font-size: 4vw;
     }
 }
