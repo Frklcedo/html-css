@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+main.main-content{
+    padding: 8vw;
+}
+div.ipt{
+    max-width: 200px;
+}
+div.aside-logo{
+    display: grid;
+    place-items: center;
+}
+a.nounder{
+    text-decoration: none;
+    align-self: center;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Banho dogs</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Banho dogs
+        </h1>
+    </header>
+    <main>
+        <form action="#" method="get">
+            <label class="form-e" for="unome">Seu nome</label>
+            <input class="form-e" type="text" name="unome" id="unome" onblur="toUC('unome');">
+            <label class="form-e" for="nome">Nome do animal</label>
+            <input class="form-e" type="text" name="nanimal" id="nomeAnimal" required onblur="toUC('nomeAnimal');">
+            <label>Banho ou tosa?</label>
+            <div class="form-e">
+                <input type="checkbox" name="banho" value="banho">
+                <label for="banho"> Banho</label>
+            </div>
+            <div class="form-e">
+                <input type="checkbox" name="tosa" value="tosa">
+                <label for="tosa">Tosa</label>
+            </div>
+            <input type="submit" value="Enviar" class="form-e" onclick="exibirMsg('nomeAnimal');">
+            <script src="js/script.js"></script>
+        </form>
+    </main>
+</body>
+</html>
